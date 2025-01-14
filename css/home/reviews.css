@@ -1,0 +1,71 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    text-align: center;
+}
+
+.reviews__title {
+    font-size: 32px;
+}
+
+.reviews__container {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to 1 column */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Space between items */
+    width: 100%;  /* Make sure the container takes full width */
+    max-width: 100%; /* Prevent overflow */
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+.reviews__wrapper {
+    display: grid;
+    grid-column: span 1; /* Make sure wrapper spans only 1 column */
+    grid-row: auto; /* Allow rows to grow based on content */
+    gap: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 1rem;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.reviews__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;  /* Adjust the gap between items */
+}
+
+.reviews__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reviews__icon {
+    color: blue;
+}
+
+.reviews__image {
+    border-radius: 50%;
+    width: 50px;
+    aspect-ratio: 1 / 1;
+}
+
+.reviews__review-text {
+    line-height: 1.5rem;
+}
+
+/* Responsive Styles for 1024px and up */
+@media (min-width: 1024px) {
+    .reviews__container {
+        grid-template-columns: repeat(4, 1fr); /* Change to 4 equal columns for larger screens */
+        gap: 1rem; /* Space between items */
+    }
+}

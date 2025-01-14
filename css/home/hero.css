@@ -1,0 +1,132 @@
+.hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero__title {
+    font-size: xx-large;
+}
+
+.hero__button {
+    
+}
+
+.hero__trust .fa-star {
+    color: green;
+}
+
+.hero__rating-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.hero__rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero__rating .fa-star {
+    color: orange;
+}
+
+.hero__image {
+    display: block;
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* @media (min-width: 475px) {
+
+}
+
+@media (min-width: 640px) {
+
+} */
+
+@media (min-width: 768px) {
+    .hero__title {
+        font-size: 48px;
+    }
+
+    .hero__description {
+        font-size: large;
+        width: 60ch;
+    }
+
+    .hero__image {
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+    }
+
+    .hero__rating-container {
+        display: flex;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 0;
+        padding: 1rem;
+    }
+
+    .hero__content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .hero__title {
+        font-size: 64px;
+        text-align: left;
+    }
+
+    .hero__description {
+        text-align: left;
+        font-size: large;
+    }
+
+    .hero__button {
+        font-size: medium;
+    }
+
+    .hero__display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero__image {
+        
+    }
+}
+
+/*
+@media (min-width: 1280px) {
+
+}
+
+@media (min-width: 1536px) {
+
+} */

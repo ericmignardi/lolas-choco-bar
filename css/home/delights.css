@@ -1,0 +1,41 @@
+.delights {
+    background-color: #1B0044;
+    padding: 8rem 16rem;
+}
+
+.delights__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    color: white;
+}
+
+.delights__title {
+    font-size: 48px;
+}
+
+/* @media (min-width: 475px) {
+
+}
+
+@media (min-width: 640px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1280px) {
+
+}
+
+@media (min-width: 1536px) {
+
+} */
